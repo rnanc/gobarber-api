@@ -1,20 +1,20 @@
 // import AppError from '@shared/errors/AppError';
 
-import ListProviderMonthAvaliabilityService from '@modules/appointments/services/ListProviderMonthAvaliabilityService';
+import ListProviderMonthAvailabilityService from '@modules/appointments/services/ListProviderMonthAvailabilityService';
 import FakeAppointmentsRepository from '@modules/appointments/repositories/fakes/FakeAppointmentsRepository';
 
-let listProviderMonthAvaliabilityService: ListProviderMonthAvaliabilityService;
+let listProviderMonthAvailabilityService: ListProviderMonthAvailabilityService;
 let fakeAppointmentsRepository: FakeAppointmentsRepository;
 
-describe('ListProviderMonthAvaliabilityService', () => {
+describe('ListProviderMonthAvailabilityService', () => {
   beforeEach(() => {
     fakeAppointmentsRepository = new FakeAppointmentsRepository();
-    listProviderMonthAvaliabilityService = new ListProviderMonthAvaliabilityService(
+    listProviderMonthAvailabilityService = new ListProviderMonthAvailabilityService(
       fakeAppointmentsRepository,
     );
   });
 
-  it('should be able to llist hte month availability from provider', async () => {
+  it('should be able to list hte month availability from provider', async () => {
     await fakeAppointmentsRepository.create({
       provider_id: '123456',
       date: new Date(2020, 4, 20, 8, 0, 0),
@@ -60,7 +60,7 @@ describe('ListProviderMonthAvaliabilityService', () => {
       date: new Date(2020, 4, 21, 8, 0, 0),
     });
 
-    const availability = await listProviderMonthAvaliabilityService.execute({
+    const availability = await listProviderMonthAvailabilityService.execute({
       provider_id: '123456',
       year: 2020,
       month: 5,
