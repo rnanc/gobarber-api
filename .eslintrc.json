@@ -33,6 +33,7 @@
       }],
       "@typescript-eslint/interface-name-prefix":["error", {"prefixWithI":"always"}],
       "no-useless-constructor":"off",
+      "no-console":"off",
       "import/no-unresolved":"off",
       "import/extensions": [
         "error",
