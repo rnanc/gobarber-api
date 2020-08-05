@@ -38,5 +38,5 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
 
 app.listen(3333, () => {
   // eslint-disable-next-line no-console
-  console.log('(☞ﾟヮﾟ)☞ Server Started ☜(ﾟヮﾟ☜)');
+  console.log('(☞ﾟヮﾟ)☞ Server Started on port 3333 ☜(ﾟヮﾟ☜)');
 });
