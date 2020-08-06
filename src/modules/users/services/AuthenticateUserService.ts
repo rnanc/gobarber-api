@@ -48,10 +48,6 @@ class AuthenticateUserService {
 
     const { secret } = authConfig.jwt;
 
-    if (!secret) {
-      throw new Error('undefined secret');
-    }
-
     const token = sign({}, secret, {
       subject: user.id,
       expiresIn: authConfig.jwt.expiresIn,
