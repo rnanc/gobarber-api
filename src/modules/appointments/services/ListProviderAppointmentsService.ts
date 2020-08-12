@@ -42,8 +42,8 @@ class ListProviderAppointmentsService {
         {
           provider_id,
           day,
-          year,
           month,
+          year,
         },
       );
 
