@@ -14,8 +14,8 @@ export default class ProviderAppointmentController {
       ListProviderAppointmentsService,
     );
     const appointments = await listProviderAppointments.execute({
-      month: Number(month),
       day: Number(day),
+      month: Number(month),
       year: Number(year),
       provider_id,
     });
