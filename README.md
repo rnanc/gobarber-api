@@ -41,3 +41,10 @@ To run the API in development settings, type and run the following command on te
 The API have automated testing in all it's services, to run the tests enter the following command on terminal:
 
 > $ yarn test
+
+## Related Links
+
+GoBarber Mobile :iphone:: https://github.com/rnanc/gobarber-app
+
+GoBarber Web :computer:: https://github.com/rnanc/gobarber-web
+
